@@ -34,3 +34,48 @@ jQuery( document ).ready( function( $ ) {
         } );
     } );
 } );
+wp.customize( 'featured-background-image_1', function( value ) {
+		value.bind( function( to ) {
+			$( '.carousel-inner . item img' ).attr('src', to );
+		} );
+	} );
+        wp.customize( 'featured-background-image_2', function( value ) {
+		value.bind( function( to ) {
+			$( '.carousel-inner . item img' ).attr('src', to );
+		} );
+	} );
+        wp.customize( 'featured-background-image_3', function( value ) {
+		value.bind( function( to ) {
+			$( '.carousel-inner . item img' ).attr('src', to );
+		} );
+	} );
+        
+        wp.customize( 'slider_caption_1', function( value ) {
+		value.bind( function( to ) {
+			$( '.carousel-caption h2' ).text( to );
+		} );
+	} );
+        
+        wp.customize( 'slider_caption_2', function( value ) {
+		value.bind( function( to ) {
+			$( '.carousel-caption h2' ).text( to );
+		} );
+	} );
+        
+        wp.customize( 'slider_caption_3', function( value ) {
+		value.bind( function( to ) {
+			$( '.carousel-caption h2' ).text( to );
+		} );
+	} );
+        
+         wp.customize( 'home_widget_header', function( value ) {
+		value.bind( function( to ) {
+			$( '.home-jumbotron h1' ).text( to );
+		} );
+	} );
+        
+         wp.customize( 'home_widget_content', function( value ) {
+		value.bind( function( to ) {
+			$( '.home-jumbotron p' ).text( to );
+		} );
+	} );
