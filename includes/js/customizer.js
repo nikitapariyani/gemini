@@ -79,3 +79,51 @@ wp.customize( 'featured-background-image_1', function( value ) {
 			$( '.home-jumbotron p' ).text( to );
 		} );
 	} );
+        
+        wp.customize( 'home_widget_content', function( value ) {
+		value.bind( function( to ) {
+			$( '.textwidget h3' ).text( to );
+		} );
+	} );
+        
+        wp.customize( 'home_widget_content', function( value ) {
+		value.bind( function( to ) {
+			$( '.textwidget p' ).text( to );
+		} );
+	} );
+        
+        wp.customize( 'home_widget_content', function( value ) {
+		value.bind( function( to ) {
+			$( '.textwidget h3' ).text( to );
+		} );
+	} );
+        
+        wp.customize( 'home_widget_content', function( value ) {
+		value.bind( function( to ) {
+			$( '.textwidget p' ).text( to );
+		} );
+	} );
+        
+        wp.customize( 'home_widget_content', function( value ) {
+		value.bind( function( to ) {
+			$( '.textwidget h3' ).text( to );
+		} );
+	} );
+        
+        wp.customize( 'home_widget_content', function( value ) {
+		value.bind( function( to ) {
+			$( '.textwidget p' ).text( to );
+		} );
+	} );
+        
+        wp.customize( 'home_widget_content', function( value ) {
+		value.bind( function( to ) {
+			$( '.textwidget h3' ).text( to );
+		} );
+	} );
+        
+        wp.customize( 'text_content_4', function( value ) {
+		value.bind( function( to ) {
+			$( '.textwidget p' ).text( to );
+		} );
+	} );

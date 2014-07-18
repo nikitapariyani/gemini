@@ -101,7 +101,7 @@ function gemini_scripts() {
         }
 	// load Gemini styles
 	wp_enqueue_style( 'gemini-style', get_stylesheet_uri() );
-
+        wp_enqueue_style('font-awesome',get_template_directory_uri() . '/font-awesome.min.css');
 	// load bootstrap js
 	wp_enqueue_script('gemini-bootstrapjs', get_template_directory_uri().'/includes/resources/bootstrap/js/bootstrap.js', array('jquery') );
 

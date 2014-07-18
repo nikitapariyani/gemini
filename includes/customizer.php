@@ -113,7 +113,7 @@ $wp_customize->add_section('gemini_slider_section', array(
         'settings' => 'slider_caption_3',
         'priority' => 6,
     ));
-    
+    /*home widgets*/
     $wp_customize->add_section('home_page_widgets', array(
         'title' => __('Home Widget', 'gemini'),
         'priority' => 37,
@@ -138,6 +138,101 @@ $wp_customize->add_section('gemini_slider_section', array(
         'settings' => 'home_widget_content',
         'priority' => 2,
     ));
+    /*4column text widget*/
+    $wp_customize->add_section('text_widgets', array(
+        'title' => __('Text Widget', 'gemini'),
+        'priority' => 38,
+    ));
+    
+    $wp_customize->add_setting('text_header_1',array(
+        'transport'=>'postMessage',
+    ));
+
+    $wp_customize->add_control('text_header_1', array(
+        'label' => __('Title', 'gemini'),
+        'section' => 'text_widgets',
+        'settings' => 'text_header_1',
+        'priority' => 1,
+    ));
+    
+    $wp_customize->add_setting('text_content_1',array(
+        'transport'=>'postMessage',
+    ));
+
+    $wp_customize->add_control('text_content_1', array(
+        'label' => __('Description', 'gemini'),
+        'section' => 'text_widgets',
+        'settings' => 'text_content_1',
+        'priority' => 2,
+    ));
+    
+    $wp_customize->add_setting('text_header_2',array(
+        'transport'=>'postMessage',
+    ));
+
+    $wp_customize->add_control('text_header_2', array(
+        'label' => __('Title', 'gemini'),
+        'section' => 'text_widgets',
+        'settings' => 'text_header_2',
+        'priority' => 3,
+    ));
+    
+    $wp_customize->add_setting('text_content_2',array(
+        'transport'=>'postMessage',
+    ));
+
+    $wp_customize->add_control('text_content_2', array(
+        'label' => __('Description', 'gemini'),
+        'section' => 'text_widgets',
+        'settings' => 'text_content_2',
+        'priority' => 4,
+    ));
+    
+    $wp_customize->add_setting('text_header_3',array(
+        'transport'=>'postMessage',
+    ));
+
+    $wp_customize->add_control('text_header_3', array(
+        'label' => __('Title', 'gemini'),
+        'section' => 'text_widgets',
+        'settings' => 'text_header_3',
+        'priority' => 5,
+    ));
+    
+    $wp_customize->add_setting('text_content_3',array(
+        'transport'=>'postMessage',
+    ));
+
+    $wp_customize->add_control('text_content_3', array(
+        'label' => __('Description', 'gemini'),
+        'section' => 'text_widgets',
+        'settings' => 'text_content_3',
+        'priority' => 6,
+    ));
+    
+    $wp_customize->add_setting('text_header_4',array(
+        'transport'=>'postMessage',
+    ));
+
+    $wp_customize->add_control('text_header_4', array(
+        'label' => __('Title', 'gemini'),
+        'section' => 'text_widgets',
+        'settings' => 'text_header_4',
+        'priority' => 7,
+    ));
+    
+    $wp_customize->add_setting('text_content_4',array(
+        'transport'=>'postMessage',
+    ));
+
+    $wp_customize->add_control('text_content_4', array(
+        'label' => __('Description', 'gemini'),
+        'section' => 'text_widgets',
+        'settings' => 'text_content_4',
+        'priority' => 8,
+    ));
+    
+    
 }
 add_action( 'customize_register', 'gemini_customize_register' );
 

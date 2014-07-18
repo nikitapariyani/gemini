@@ -28,7 +28,7 @@ get_header(); ?>
         <?php if ( get_theme_mod('featured_background_image_1') !='' ) {  ?>
         <img src="<?php echo get_theme_mod('featured_background_image_1'); ?>" />
         <?php } else {  ?>
-      <img src="http://www.tumblr18.com/t18/2013/12/Most-pretty-white-and-purple-flowers.jpg" alt="...">
+      <img src="<?php echo get_template_directory_uri();?>/images/mushroom.jpg" alt="...">
       <?php }?>
       
       <div class="carousel-caption">
@@ -43,7 +43,7 @@ get_header(); ?>
         <?php if ( get_theme_mod('featured_background_image_2') !='' ) {  ?>
         <img src="<?php echo get_theme_mod('featured_background_image_2'); ?>" />
         <?php } else {  ?>
-      <img src="http://desktopbackgroundshq.com/backgrounds/awsome-flowers-hd-wallpaper-flower-backgrounds-awsome-flowers-26053.jpg" alt="...">
+        <img src="<?php echo get_template_directory_uri();?>/images/bicycle.jpg" alt="...">
       <?php }?>
       <div class="carousel-caption">
           <?php if ( get_theme_mod('slider_caption_2')) {  ?>
@@ -57,7 +57,7 @@ get_header(); ?>
         <?php if ( get_theme_mod('featured_background_image_2') ) {  ?>
         <img src="<?php echo get_theme_mod('featured_background_image_2'); ?>" />
         <?php } else {  ?>
-      <img src="http://yournaperville.com/wp-content/uploads/2013/04/flowers-shops-in-naperville.jpg" alt="...">
+      <img src="<?php echo get_template_directory_uri();?>/images/ladybug.jpg" alt="...">
       <?php }?>
       <div class="carousel-caption">
           <?php if ( get_theme_mod('slider_caption_3')) {  ?>
@@ -110,35 +110,68 @@ get_header(); ?>
 <div id="home-page-widgets">
 	<div class="">
             <div class="row">
-		<aside id="bavotasan_custom_text_widget-2" class="home-widget col-md-3 bavotasan_custom_text_widget">
+		<aside id="bavotasan_custom_text_widget-2" class="home-widget col-md-3 bavotasan_custom_text_widget text-center">
                     <a href="#"><i class="info fa fa-mobile"></i></a>
+                    <?php if ( get_theme_mod('text_header_1')) {  ?>
+                    <h3><?php echo (get_theme_mod('text_header_1')); ?></h3>
+                    <?php } else { ?>
                     <h3 class="home-widget-title"><a href="#">Mobile Ready</a></h3>
+                    <?php } ?>
                     <div class="textwidget">
+                        <?php if ( get_theme_mod('text_content_1')) {  ?>
+                        <p><?php echo (get_theme_mod('text_content_1')); ?></p>
+                        <?php } else { ?>
 			<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+                        <?php } ?>
                     </div>
-                    <a href="#" class="btn btn-info btn-lg">Learn more</a>
+                   
+                    <a href="#" class="btn btn-info btn-lg first">Learn more</a>
                 </aside>
-                <aside id="bavotasan_custom_text_widget-3" class="home-widget col-md-3 bavotasan_custom_text_widget">
+                <aside id="bavotasan_custom_text_widget-3" class="home-widget col-md-3 bavotasan_custom_text_widget text-center">
                     <a href="#"><i class="info fa fa-tint"></i></a>
+                    <?php if ( get_theme_mod('text_header_2')) {  ?>
+                    <h3><?php echo (get_theme_mod('text_header_2')); ?></h3>
+                    <?php } else { ?>
                     <h3 class="home-widget-title"><a href="#">Color Options</a></h3>
+                    <?php } ?>
                     <div class="textwidget">
+                        <?php if ( get_theme_mod('text_content_2')) {  ?>
+                        <p><?php echo (get_theme_mod('text_content_2')); ?></p>
+                        <?php } else { ?>
 			<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        <?php } ?>
                     </div>
                     <a href="#" class="btn btn-info btn-lg">Learn more</a>
                 </aside>
-                <aside id="bavotasan_custom_text_widget-5" class="home-widget col-md-3 bavotasan_custom_text_widget">
+                <aside id="bavotasan_custom_text_widget-5" class="home-widget col-md-3 bavotasan_custom_text_widget text-center">
                     <a href="#"><i class="info fa fa-share-square-o"></i></a>
+                    <?php if ( get_theme_mod('text_header_3')) {  ?>
+                    <h3><?php echo (get_theme_mod('text_header_3')); ?></h3>
+                    <?php } else { ?>
                     <h3 class="home-widget-title"><a href="#">Social Menu</a></h3>
+                    <?php } ?>
                     <div class="textwidget">
+                        <?php if ( get_theme_mod('text_content_3')) {  ?>
+                        <p><?php echo (get_theme_mod('text_content_3')); ?></p>
+                        <?php } else { ?>
 			<p>Etiam porta sem malesuada magna mollis malesuada magna mollis euismod.</p>
+                        <?php } ?>
                     </div>
-                    <a href="#" class="btn btn-info btn-lg">Learm more</a>
+                    <a href="#" class="btn btn-info btn-lg">Learn more</a>
                 </aside>
-                <aside id="bavotasan_custom_text_widget-4" class="home-widget col-md-3 bavotasan_custom_text_widget">
+                <aside id="bavotasan_custom_text_widget-4" class="home-widget col-md-3 bavotasan_custom_text_widget text-center">
                     <a href="#"><i class="info fa fa-tachometer"></i></a>
+                    <?php if ( get_theme_mod('text_header_4')) {  ?>
+                    <h3><?php echo (get_theme_mod('text_header_4')); ?></h3>
+                    <?php } else { ?>
                     <h3 class="home-widget-title"><a href="#">Optimized for SEO</a></h3>
+                    <?php } ?>
                     <div class="textwidget">
+                        <?php if ( get_theme_mod('text_content_4')) {  ?>
+                        <p><?php echo (get_theme_mod('text_content_4')); ?></p>
+                        <?php } else { ?>
 			<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor sagittis auctor.</p>
+                        <?php } ?>
                     </div>
                     <a href="#" class="btn btn-info btn-lg">Learn more</a>
                 </aside>				
