@@ -95,7 +95,7 @@ function gemini_scripts() {
 
 	// load bootstrap css
 	wp_enqueue_style( 'gemini-bootstrap', get_template_directory_uri() . '/includes/resources/bootstrap/css/bootstrap.css' );
-        $fonts_url ='http://fonts.googleapis.com/css?family=Raleway'  ;
+        $fonts_url ='http://fonts.googleapis.com/css?family=Open+Sans|Raleway'  ;
         if ( !empty ($fonts_url)){
             wp_enqueue_style('fonts',esc_url_raw($fonts_url),array(),null);
         }
