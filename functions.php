@@ -38,6 +38,8 @@ function gemini_setup() {
 		 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 		*/
 		add_theme_support( 'post-thumbnails' );
+                add_image_size( 'homepage-thumb', 100, 100, true );
+                add_image_size( 'feature-thumb', 555, 220, true );
 
 		/**
 		 * Enable support for Post Formats
@@ -85,6 +87,30 @@ function gemini_widgets_init() {
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
 	) );
+        register_sidebar( array(
+		'name'          => __( 'Footer Widget 1', 'gemini' ),
+		'id'            => 'footer-sidebar-1',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	) );
+        register_sidebar( array(
+		'name'          => __( 'Footer Widget 2', 'gemini' ),
+		'id'            => 'footer-sidebar-2',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	) );
+        register_sidebar( array(
+		'name'          => __( 'Footer Widget 3', 'gemini' ),
+		'id'            => 'footer-sidebar-3',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	) );
 }
 add_action( 'widgets_init', 'gemini_widgets_init' );
 
@@ -102,6 +128,8 @@ function gemini_scripts() {
 	// load Gemini styles
 	wp_enqueue_style( 'gemini-style', get_stylesheet_uri() );
         wp_enqueue_style('font-awesome',get_template_directory_uri() . '/font-awesome.min.css');
+        
+        wp_enqueue_script('jquery');
 	// load bootstrap js
 	wp_enqueue_script('gemini-bootstrapjs', get_template_directory_uri().'/includes/resources/bootstrap/js/bootstrap.js', array('jquery') );
 

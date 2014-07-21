@@ -33,7 +33,7 @@ jQuery( document ).ready( function( $ ) {
             }
         } );
     } );
-} );
+
 wp.customize( 'featured-background-image_1', function( value ) {
 		value.bind( function( to ) {
 			$( '.carousel-inner . item img' ).attr('src', to );
@@ -80,50 +80,51 @@ wp.customize( 'featured-background-image_1', function( value ) {
 		} );
 	} );
         
-        wp.customize( 'home_widget_content', function( value ) {
+        wp.customize( 'text_header_1', function( value ) {
 		value.bind( function( to ) {
-			$( '.textwidget h3' ).text( to );
+			$( '.home-widget-title-1 h3' ).text( to );
 		} );
 	} );
         
-        wp.customize( 'home_widget_content', function( value ) {
+        wp.customize( 'text_content_1', function( value ) {
 		value.bind( function( to ) {
-			$( '.textwidget p' ).text( to );
+			$( '.textwidget1 p' ).text( to );
 		} );
 	} );
         
-        wp.customize( 'home_widget_content', function( value ) {
+        wp.customize( 'text_header_2', function( value ) {
 		value.bind( function( to ) {
-			$( '.textwidget h3' ).text( to );
+			$( '.home-widget-title-2 h3' ).text( to );
 		} );
 	} );
         
-        wp.customize( 'home_widget_content', function( value ) {
+        wp.customize( 'text_content_2', function( value ) {
 		value.bind( function( to ) {
-			$( '.textwidget p' ).text( to );
+			$( '.textwidget2 p' ).text( to );
 		} );
 	} );
         
-        wp.customize( 'home_widget_content', function( value ) {
+        wp.customize( 'text_header_3', function( value ) {
 		value.bind( function( to ) {
-			$( '.textwidget h3' ).text( to );
+			$( '.home-widget-title-3 h3' ).text( to );
 		} );
 	} );
         
-        wp.customize( 'home_widget_content', function( value ) {
+        wp.customize( 'text_content_3', function( value ) {
 		value.bind( function( to ) {
-			$( '.textwidget p' ).text( to );
+			$( '.textwidget3 p' ).text( to );
 		} );
 	} );
         
-        wp.customize( 'home_widget_content', function( value ) {
+        wp.customize( 'text_header_4', function( value ) {
 		value.bind( function( to ) {
-			$( '.textwidget h3' ).text( to );
+			$( '.home-widget-title-4 h3' ).text( to );
 		} );
 	} );
         
         wp.customize( 'text_content_4', function( value ) {
 		value.bind( function( to ) {
-			$( '.textwidget p' ).text( to );
+			$( '.textwidget4 p' ).text( to );
 		} );
 	} );
+} );

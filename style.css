@@ -103,7 +103,7 @@ img[class*="wp-image-"] {
 
 /*extra changes*/
 .navbar-fixed-top{
-    margin-top:32px;
+    
     background-color:#000;
     height:30px;
     opacity:0.7;
@@ -112,7 +112,7 @@ img[class*="wp-image-"] {
     color:#999999;
 }
 .navbar-fixed-top li a:hover{
-    background-color: none !important;
+    background-color: #222 !important;
     color:#fff;
 }
 
@@ -120,7 +120,7 @@ img[class*="wp-image-"] {
     height:600px;
     width:100%;
     position:relative;
-    margin-top:50px;
+    
 }
 .carousel-inner img{
     height:600px;
@@ -181,7 +181,7 @@ font-weight: normal;
 .line-3{
     width:100%;
     height:5px;
-    margin-top:-15px;
+   
     margin-bottom: 10px;
     background-color: #ddd;
 }
@@ -229,7 +229,7 @@ border-radius: 6px;
 #bavotasan_custom_text_widget-2 p{
     padding-bottom:20px;
 }
-.bavotasan_custom_text_widget a i{
+.bavotasan_custom_text_widget i:hover{
     text-decoration: none;
 }
 .bavotasan_custom_text_widget h3 a:hover {
@@ -262,38 +262,29 @@ padding-bottom: 10px;
 .entry-content p{
     margin:20px 0 0 0;
 }
-#footer {
+.footer {
 border-top: 1px solid #000;
-background: #222;
-color: #7B7B7B;
-font-size: 13px;
-position: relative;
-z-index: 100;
-clear: both;
-padding: 10px 0;
+background-color: #222;
+color:gray;
+padding-top:20px;
 }
-#footer-content {
-padding-top: 15px;
-padding-bottom: 15px;
-}
-.footer-widget ul {
+.footer ul {
 list-style: none;
 padding: 5px 0 0;
 }
-
-#footer a{
-color: #7B7B7B;
-padding:0px;
-line-height:2;
+.footer-widget ul li {
+margin-bottom: 5px;
 }
-.footer-widget ul li a:hover{
-    background-color: transparent;
+.footer a{
+    color:#7b7b7b;
+    padding-bottom:10px;
+}
+.footer ul li a{
+    padding:0px;
+}
+.footer ul li a:hover{
     text-decoration: underline;
-    
-}
-.footer-widget {
-margin: 10px 0 30px;
-font-size: 14px;
+    background-color: #222;
 }
 .widget-title {
 color: #fff;
@@ -301,10 +292,17 @@ padding: 10px 0 5px;
 text-transform: uppercase;
 font-size: 16px;
 }
+i:hover{
+    text-decoration: none;
+}
 hr{
     height:1px;
     color:#222;
 }
+.title{
+    margin-top:0px;
+}
+
 /* Make sure embeds and iframes fit their containers */
 embed,
 iframe,

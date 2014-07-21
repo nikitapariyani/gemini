@@ -112,12 +112,14 @@ get_header(); ?>
             <div class="row">
 		<aside id="bavotasan_custom_text_widget-2" class="home-widget col-md-3 bavotasan_custom_text_widget text-center">
                     <a href="#"><i class="info fa fa-mobile"></i></a>
+                    <div class="home-widget-title-1">
                     <?php if ( get_theme_mod('text_header_1')) {  ?>
-                    <h3><?php echo (get_theme_mod('text_header_1')); ?></h3>
+                    <h3 ><?php echo (get_theme_mod('text_header_1')); ?></h3>
                     <?php } else { ?>
-                    <h3 class="home-widget-title"><a href="#">Mobile Ready</a></h3>
+                    <h3 ><a href="#">Mobile Ready</a></h3>
                     <?php } ?>
-                    <div class="textwidget">
+                    </div>
+                    <div class="textwidget1">
                         <?php if ( get_theme_mod('text_content_1')) {  ?>
                         <p><?php echo (get_theme_mod('text_content_1')); ?></p>
                         <?php } else { ?>
@@ -129,12 +131,14 @@ get_header(); ?>
                 </aside>
                 <aside id="bavotasan_custom_text_widget-3" class="home-widget col-md-3 bavotasan_custom_text_widget text-center">
                     <a href="#"><i class="info fa fa-tint"></i></a>
+                    <div class="home-widget-title-2">
                     <?php if ( get_theme_mod('text_header_2')) {  ?>
-                    <h3><?php echo (get_theme_mod('text_header_2')); ?></h3>
+                    <h3 ><?php echo (get_theme_mod('text_header_2')); ?></h3>
                     <?php } else { ?>
-                    <h3 class="home-widget-title"><a href="#">Color Options</a></h3>
+                    <h3 ><a href="#">Color Options</a></h3>
                     <?php } ?>
-                    <div class="textwidget">
+                    </div>
+                    <div class="textwidget2">
                         <?php if ( get_theme_mod('text_content_2')) {  ?>
                         <p><?php echo (get_theme_mod('text_content_2')); ?></p>
                         <?php } else { ?>
@@ -145,12 +149,14 @@ get_header(); ?>
                 </aside>
                 <aside id="bavotasan_custom_text_widget-5" class="home-widget col-md-3 bavotasan_custom_text_widget text-center">
                     <a href="#"><i class="info fa fa-share-square-o"></i></a>
+                    <div class="home-widget-title-3">
                     <?php if ( get_theme_mod('text_header_3')) {  ?>
-                    <h3><?php echo (get_theme_mod('text_header_3')); ?></h3>
+                    <h3 ><?php echo (get_theme_mod('text_header_3')); ?></h3>
                     <?php } else { ?>
-                    <h3 class="home-widget-title"><a href="#">Social Menu</a></h3>
+                    <h3 ><a href="#">Social Menu</a></h3>
                     <?php } ?>
-                    <div class="textwidget">
+                    </div>
+                    <div class="textwidget3">
                         <?php if ( get_theme_mod('text_content_3')) {  ?>
                         <p><?php echo (get_theme_mod('text_content_3')); ?></p>
                         <?php } else { ?>
@@ -161,12 +167,14 @@ get_header(); ?>
                 </aside>
                 <aside id="bavotasan_custom_text_widget-4" class="home-widget col-md-3 bavotasan_custom_text_widget text-center">
                     <a href="#"><i class="info fa fa-tachometer"></i></a>
+                    <div class="home-widget-title-4">
                     <?php if ( get_theme_mod('text_header_4')) {  ?>
                     <h3><?php echo (get_theme_mod('text_header_4')); ?></h3>
                     <?php } else { ?>
-                    <h3 class="home-widget-title"><a href="#">Optimized for SEO</a></h3>
+                    <h3 ><a href="#">Optimized for SEO</a></h3>
                     <?php } ?>
-                    <div class="textwidget">
+                    </div>
+                    <div class="textwidget4">
                         <?php if ( get_theme_mod('text_content_4')) {  ?>
                         <p><?php echo (get_theme_mod('text_content_4')); ?></p>
                         <?php } else { ?>
@@ -179,86 +187,7 @@ get_header(); ?>
 	</div>
 </div>
 <!--home-page-widgets-->
-<!--blog area-->
-<div class="container from-the-blog">
-    <div class="row">
-	<div id="primary" class="col-md-12 hfeed">
-            <div class="page-header clearfix">
-		<h1 class="pull-left">Post Block</h1>
-            </div>
-
-            <div class="row">
-		<div class="col-md-6">	
-                    <article id="post-23" class="post-23 post type-post status-publish format-standard has-post-thumbnail hentry category-features clearfix xfolkentry">
-			<a href="http://demos.bavotasan.com/arcade/2014/01/responsive-design/" class="image-anchor">
-                            <img width="570" height="220" src="http://demos.bavotasan.com/arcade/files/2014/01/laptop-570x220.jpg" class="first-post wp-post-image" alt="laptop">		
-                        </a>
-		
-                        <h1 class="entry-title taggedlink">
-                            <a href="http://demos.bavotasan.com/arcade/2014/01/responsive-design/" title="Responsive Design" rel="bookmark">Responsive Design</a>
-                        </h1>
-
-	
-                        <div class="entry-content description clearfix">
-                            <p>Arcade was built to look amazing on any device. To see it in action, resize your browser window and you will see how things adjust accordingly. If you shrink it down to a handheld device width, you will see the mobile menu appear for easier navigation on any smart phone.…</p>
-                        </div><!-- .entry-content -->
-                    </article><!-- #post-23 -->
-                </div>
-                                    
-                <div class="col-md-6">	
-                    <article id="post-32" class="post-32 post type-post status-publish format-standard has-post-thumbnail hentry category-features clearfix xfolkentry">
-                        <a href="http://demos.bavotasan.com/arcade/2014/01/new-collection-of-shortcodes/" class="image-anchor">
-                            <img width="100" height="100" src="http://demos.bavotasan.com/arcade/files/2014/01/unsplash_52b5ec8515a34_1-100x100.jpg" class="alignleft wp-post-image" alt="unsplash_52b5ec8515a34_1">		
-                        </a>
-                        <div class="entry-content description clearfix">
-                        <h1 class="entry-title taggedlink">
-                            <a href="http://demos.bavotasan.com/arcade/2014/01/new-collection-of-shortcodes/" title="New Collection of Shortcodes" rel="bookmark">New Collection of Shortcodes</a>
-                        </h1>
-
-	
-                        
-                            <p>I decided to put together a collection of easy to use shortcodes based off of Bootstrap and include them in…</p>
-                        </div><!-- .entry-content -->
-                    </article><!-- #post-32 -->	
-                    <div class="line-3">
-                    </div>                    
-                    <article id="post-29" class="post-29 post type-post status-publish format-standard has-post-thumbnail hentry category-features clearfix xfolkentry">
-                        <a href="http://demos.bavotasan.com/arcade/2014/01/custom-css-editor/" class="image-anchor">
-                            <img width="100" height="100" src="http://demos.bavotasan.com/arcade/files/2014/01/fields-100x100.jpg" class="alignleft wp-post-image" alt="fields">		
-                        </a>
-                        <div class="entry-content description clearfix">
-                        <h1 class="entry-title taggedlink">
-                            <a href="http://demos.bavotasan.com/arcade/2014/01/custom-css-editor/" title="Custom CSS Editor" rel="bookmark">Custom CSS Editor</a>
-			</h1>
-
-	
-                            <p>Offering the greatest amount of control on a theme is what most people expect from a premium theme. That’s why…</p>
-                        </div><!-- .entry-content -->
-                    </article><!-- #post-29 -->	
-                    <div class="line-3">
-                    </div>
-                    <article id="post-26" class="post-26 post type-post status-publish format-standard has-post-thumbnail hentry category-features clearfix xfolkentry">
-                        <a href="http://demos.bavotasan.com/arcade/2014/01/theme-customizer/" class="image-anchor">
-                            <img width="100" height="100" src="http://demos.bavotasan.com/arcade/files/2014/01/hochbunker2-100x100.jpg" class="alignleft wp-post-image" alt="hochbunker2">		
-                        </a>
-                        
-                    <div class="entry-content description clearfix">
-                    <h1 class="entry-title taggedlink">
-			<a href="http://demos.bavotasan.com/arcade/2014/01/theme-customizer/" title="Theme Customizer" rel="bookmark">Theme Customizer</a>
-                    </h1>
-
-	
-                        <p>The customizer is an amazing feature that allows you to preview all your changes to the theme options before going…</p>
-                    </div><!-- .entry-content -->
-                    </article><!-- #post-26 -->
-                </div>				
-            </div>
-			
-        </div>
-		
-    </div>
-	
-</div>
+<?php get_template_part('content','frontposts');?>
 
 
 <?php get_footer(); ?>
