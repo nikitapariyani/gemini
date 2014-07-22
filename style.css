@@ -129,6 +129,30 @@ img[class*="wp-image-"] {
 .carousel-caption{
     top:40%;
 }
+.page-area{
+    background-color:#e6fafc;
+}
+.page-title{
+     color:#fff;
+    text-transform: uppercase;
+}
+.page-area .page-header{
+    background-color: #0dffce;
+    text-align:center;
+   margin-top:0px;
+   padding:50px 0;
+}
+.dropdown-menu{
+    background-color: #222;
+}
+.display-posts-listing .listing-item {
+clear: both;
+}
+
+.display-posts-listing img {
+float: left;
+margin: 0 10px 10px 0;
+}
 .home-jumbotron{
     width:100%;
     background-color: #fff;
@@ -256,9 +280,7 @@ font-size: 14px;
 margin-bottom: 15px;
 padding-bottom: 10px;
 }
-.entry-content{
-    margin-top:-25px;
-}
+
 .entry-content p{
     margin:20px 0 0 0;
 }
