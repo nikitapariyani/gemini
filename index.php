@@ -12,6 +12,10 @@
  */
 
 get_header(); ?>
+<div class="blogpage">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
 
 	<?php if ( have_posts() ) : ?>
 
@@ -35,6 +39,14 @@ get_header(); ?>
 		<?php get_template_part( 'no-results', 'index' ); ?>
 
 	<?php endif; ?>
-
+            </div>
+            
+            <div class=" col-md-4">
 <?php get_sidebar(); ?>
-<?php get_footer(); ?>
+            </div>
+        </div>
+        </div>
+    </div>
+     <?php get_footer(); ?>   
+       
+</div>

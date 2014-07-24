@@ -40,7 +40,8 @@ function gemini_setup() {
 		add_theme_support( 'post-thumbnails' );
                 add_image_size( 'homepage-thumb', 100, 100, true );
                 add_image_size( 'feature-thumb', 555, 220, true );
-
+                add_image_size('featured-images',1400,200,true);
+                add_image_size('blog-thumb',200,150,true);
 		/**
 		 * Enable support for Post Formats
 		*/

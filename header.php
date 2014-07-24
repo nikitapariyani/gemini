@@ -57,8 +57,4 @@
 	</div>
 </nav>
 
-<div class="main-content">
-	<div class="">
-		<div class="row">
-			<div id="content" class="main-content-inner ">
 

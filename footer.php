@@ -7,15 +7,20 @@
  * @package Gemini
  */
 ?>
+
+
+
+
     <div class="footer ">
         <div class="container">
-<div class="sidebar col-md-4">
+            <div class="row">
+<div class="footer-sidebar col-md-4">
     <?php dynamic_sidebar('footer-sidebar-1'); ?>
 </div>
-<div class="sidebar col-md-4">
+<div class="footer-sidebar col-md-4">
     <?php dynamic_sidebar('footer-sidebar-2'); ?>
 </div>
-<div class="sidebar col-md-4">
+<div class="footer-sidebar col-md-4">
     <?php dynamic_sidebar('footer-sidebar-3'); ?>
 </div>
        			
@@ -28,6 +33,7 @@
         </div>
         </div>
  </div>
+    </div>
 
 
 

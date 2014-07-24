@@ -36,16 +36,16 @@ $wp_customize->add_section('gemini_slider_section', array(
         'priority' => 35,
     ));
 
-    $wp_customize->add_setting('featured_background_image_1',array(
+    $wp_customize->add_setting('slide_1',array(
         'transport'=>'postMessage',
     ));
 
     $wp_customize->add_control(
             new WP_Customize_Image_Control(
-            $wp_customize, 'featured_background_image_1', array(
-        'label' => 'Featured Background',
+            $wp_customize, 'slide_1', array(
+        'label' => 'Slide 1',
         'section' => 'gemini_slider_section',
-        'settings' => 'featured_background_image_1',
+        'settings' => 'slide_1',
         'priority' => 1,
             )
             )
@@ -64,15 +64,15 @@ $wp_customize->add_section('gemini_slider_section', array(
 
     
     
-    $wp_customize->add_setting('featured_background_image_2',array(
+    $wp_customize->add_setting('slide_2',array(
         'transport'=>'postMessage',
     ));
     $wp_customize->add_control(
             new WP_Customize_Image_Control(
-            $wp_customize, 'featured_background_image_2', array(
-        'label' => 'Featured Background',
+            $wp_customize, 'slide_2', array(
+        'label' => 'Slide 2',
         'section' => 'gemini_slider_section',
-        'settings' => 'featured_background_image_2',
+        'settings' => 'slide_2',
         'priority' => 3,
             )
             )
@@ -89,15 +89,15 @@ $wp_customize->add_section('gemini_slider_section', array(
         'priority' => 4,
     ));
     
-    $wp_customize->add_setting('featured_background_image_3',array(
+    $wp_customize->add_setting('slide_3',array(
         'transport'=>'postMessage',
     ));
     $wp_customize->add_control(
             new WP_Customize_Image_Control(
-            $wp_customize, 'featured_background_image_3', array(
-        'label' => 'Featured Background',
+            $wp_customize, 'slide_3', array(
+        'label' => 'Slide 3',
         'section' => 'gemini_slider_section',
-        'settings' => 'featured_background_image_3',
+        'settings' => 'slide_3',
         'priority' => 5,
             )
             )
@@ -114,34 +114,44 @@ $wp_customize->add_section('gemini_slider_section', array(
         'priority' => 6,
     ));
     /*home widgets*/
-    $wp_customize->add_section('home_page_widgets', array(
-        'title' => __('Home-Content', 'gemini'),
+    $wp_customize->add_section('home_tagline', array(
+        'title' => __('Home-Featured', 'gemini'),
         'priority' => 36,
     ));
-     $wp_customize->add_setting('home_widget_header',array(
+     $wp_customize->add_setting('home_title',array(
         'transport'=>'postMessage',
     ));
 
-    $wp_customize->add_control('home_widget_header', array(
+    $wp_customize->add_control('home_title', array(
         'label' => __('Title', 'gemini'),
-        'section' => 'home_page_widgets',
-        'settings' => 'home_widget_header',
+        'section' => 'home_tagline',
+        'settings' => 'home_title',
         'priority' => 1,
     ));
-    $wp_customize->add_setting('home_widget_content',array(
+    $wp_customize->add_setting('home_content',array(
         'transport'=>'postMessage',
     ));
 
-    $wp_customize->add_control('home_widget_content', array(
-        'label' => __('Description', 'gemini'),
-        'section' => 'home_page_widgets',
-        'settings' => 'home_widget_content',
+    $wp_customize->add_control('home_content', array(
+        'label' => __('Text Area', 'gemini'),
+        'section' => 'home_tagline',
+        'settings' => 'home_content',
         'priority' => 2,
     ));
     /*4column text widget*/
-    $wp_customize->add_section('home_featured_area_1', array(
-        'title' => __('Home Featured Area1', 'gemini'),
+    $wp_customize->add_section('home_featured_1', array(
+        'title' => __('Featured 1', 'gemini'),
         'priority' => 37,
+    ));
+    $wp_customize->add_setting('icon_1',array(
+        'transport'=>'postMessage',
+    ));
+
+    $wp_customize->add_control('icon_1', array(
+        'label' => __('Icon', 'gemini'),
+        'section' => 'home_featured_1',
+        'settings' => 'icon_1',
+        'priority' => 1,
     ));
     
     $wp_customize->add_setting('text_header_1',array(
@@ -149,10 +159,10 @@ $wp_customize->add_section('gemini_slider_section', array(
     ));
 
     $wp_customize->add_control('text_header_1', array(
-        'label' => __('Featured Title 1', 'gemini'),
-        'section' => 'home_featured_area_1',
+        'label' => __('Title', 'gemini'),
+        'section' => 'home_featured_1',
         'settings' => 'text_header_1',
-        'priority' => 1,
+        'priority' => 2,
     ));
     
     $wp_customize->add_setting('text_content_1',array(
@@ -160,24 +170,35 @@ $wp_customize->add_section('gemini_slider_section', array(
     ));
 
     $wp_customize->add_control('text_content_1', array(
-        'label' => __('Description', 'gemini'),
-        'section' => 'home_featured_area_1',
+        'label' => __('Text Area', 'gemini'),
+        'section' => 'home_featured_1',
         'settings' => 'text_content_1',
-        'priority' => 2,
+        'priority' => 3,
     ));
-    $wp_customize->add_section('home_featured_area_2', array(
-        'title' => __('Home Featured Area2', 'gemini'),
+    
+    $wp_customize->add_section('home_featured_2', array(
+        'title' => __('Featured 2', 'gemini'),
         'priority' => 38,
+    ));
+    $wp_customize->add_setting('icon_2',array(
+        'transport'=>'postMessage',
+    ));
+
+    $wp_customize->add_control('icon_2', array(
+        'label' => __('Icon', 'gemini'),
+        'section' => 'home_featured_2',
+        'settings' => 'icon_2',
+        'priority' => 1,
     ));
     $wp_customize->add_setting('text_header_2',array(
         'transport'=>'postMessage',
     ));
 
     $wp_customize->add_control('text_header_2', array(
-        'label' => __('Featured Title 2', 'gemini'),
-        'section' => 'home_featured_area_2',
+        'label' => __('Title', 'gemini'),
+        'section' => 'home_featured_2',
         'settings' => 'text_header_2',
-        'priority' => 1,
+        'priority' => 2,
     ));
     
     $wp_customize->add_setting('text_content_2',array(
@@ -185,24 +206,34 @@ $wp_customize->add_section('gemini_slider_section', array(
     ));
 
     $wp_customize->add_control('text_content_2', array(
-        'label' => __('Description', 'gemini'),
-        'section' => 'home_featured_area_2',
+        'label' => __('Text Area', 'gemini'),
+        'section' => 'home_featured_2',
         'settings' => 'text_content_2',
-        'priority' => 2,
+        'priority' => 3,
     ));
-    $wp_customize->add_section('home_featured_area_3', array(
-        'title' => __('Home Featured Area3', 'gemini'),
+    $wp_customize->add_section('home_featured_3', array(
+        'title' => __('Featured 3', 'gemini'),
         'priority' => 39,
+    ));
+    $wp_customize->add_setting('icon_3',array(
+        'transport'=>'postMessage',
+    ));
+
+    $wp_customize->add_control('icon_3', array(
+        'label' => __('Icon', 'gemini'),
+        'section' => 'home_featured_3',
+        'settings' => 'icon_3',
+        'priority' => 1,
     ));
     $wp_customize->add_setting('text_header_3',array(
         'transport'=>'postMessage',
     ));
 
     $wp_customize->add_control('text_header_3', array(
-        'label' => __('Featured Title 3', 'gemini'),
-        'section' => 'home_featured_area_3',
+        'label' => __('Title', 'gemini'),
+        'section' => 'home_featured_3',
         'settings' => 'text_header_3',
-        'priority' => 1,
+        'priority' => 2,
     ));
     
     $wp_customize->add_setting('text_content_3',array(
@@ -210,24 +241,34 @@ $wp_customize->add_section('gemini_slider_section', array(
     ));
 
     $wp_customize->add_control('text_content_3', array(
-        'label' => __('Description', 'gemini'),
-        'section' => 'home_featured_area_3',
+        'label' => __('Text Area', 'gemini'),
+        'section' => 'home_featured_3',
         'settings' => 'text_content_3',
-        'priority' => 2,
+        'priority' => 3,
     ));
-    $wp_customize->add_section('home_featured_area_4', array(
-        'title' => __('Home Featured Area4', 'gemini'),
+    $wp_customize->add_section('home_featured_4', array(
+        'title' => __('Featured 4', 'gemini'),
         'priority' => 40,
+    ));
+    $wp_customize->add_setting('icon_4',array(
+        'transport'=>'postMessage',
+    ));
+
+    $wp_customize->add_control('icon_4', array(
+        'label' => __('Icon', 'gemini'),
+        'section' => 'home_featured_4',
+        'settings' => 'icon_4',
+        'priority' => 1,
     ));
     $wp_customize->add_setting('text_header_4',array(
         'transport'=>'postMessage',
     ));
 
     $wp_customize->add_control('text_header_4', array(
-        'label' => __('Featured Title 4', 'gemini'),
-        'section' => 'home_featured_area_4',
+        'label' => __('Title', 'gemini'),
+        'section' => 'home_featured_4',
         'settings' => 'text_header_4',
-        'priority' => 1,
+        'priority' => 2,
     ));
     
     $wp_customize->add_setting('text_content_4',array(
@@ -235,10 +276,10 @@ $wp_customize->add_section('gemini_slider_section', array(
     ));
 
     $wp_customize->add_control('text_content_4', array(
-        'label' => __('Description', 'gemini'),
-        'section' => 'home_featured_area_4',
+        'label' => __('Text Area', 'gemini'),
+        'section' => 'home_featured_4',
         'settings' => 'text_content_4',
-        'priority' => 2,
+        'priority' => 3,
     ));
     
     

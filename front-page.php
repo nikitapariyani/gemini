@@ -25,8 +25,8 @@ get_header(); ?>
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-        <?php if ( get_theme_mod('featured_background_image_1') !='' ) {  ?>
-        <img src="<?php echo get_theme_mod('featured_background_image_1'); ?>" />
+        <?php if ( get_theme_mod('slide_1') ) {  ?>
+        <img src="<?php echo get_theme_mod('slide_1'); ?>" />
         <?php } else {  ?>
       <img src="<?php echo get_template_directory_uri();?>/images/cloud.jpg" alt="...">
       <?php }?>
@@ -40,8 +40,8 @@ get_header(); ?>
       </div>
     </div>
     <div class="item">
-        <?php if ( get_theme_mod('featured_background_image_2') !='' ) {  ?>
-        <img src="<?php echo get_theme_mod('featured_background_image_2'); ?>" />
+        <?php if ( get_theme_mod('slide_2') !='' ) {  ?>
+        <img src="<?php echo get_theme_mod('slide_2'); ?>" />
         <?php } else {  ?>
         <img src="<?php echo get_template_directory_uri();?>/images/bicycle.jpg" alt="...">
       <?php }?>
@@ -54,8 +54,8 @@ get_header(); ?>
       </div>
     </div>
     <div class="item">
-        <?php if ( get_theme_mod('featured_background_image_2') ) {  ?>
-        <img src="<?php echo get_theme_mod('featured_background_image_2'); ?>" />
+        <?php if ( get_theme_mod('slide_2') ) {  ?>
+        <img src="<?php echo get_theme_mod('slide_2'); ?>" />
         <?php } else {  ?>
       <img src="<?php echo get_template_directory_uri();?>/images/ladybug.jpg" alt="...">
       <?php }?>
@@ -89,13 +89,13 @@ get_header(); ?>
 			<div class="col-md-12">
 				<div class="home-jumbotron jumbotron text-center">
                                     <div class="line text-center"></div>
-                                    <?php if ( get_theme_mod('home_widget_header')) {  ?>
-                                    <h1><?php echo (get_theme_mod('home_widget_header')); ?></h1>
+                                    <?php if ( get_theme_mod('home_title')) {  ?>
+                                    <h1><?php echo (get_theme_mod('home_title')); ?></h1>
                                     <?php } else { ?>
 					<h1>A great big headline to catch some attention</h1>
                                     <?php } ?>
-                                         <?php if ( get_theme_mod('home_widget_content')) {  ?>
-                                        <p><?php echo (get_theme_mod('home_widget_content')); ?></p>
+                                         <?php if ( get_theme_mod('home_content')) {  ?>
+                                        <p><?php echo (get_theme_mod('home_content')); ?></p>
                                         <?php } else { ?>
 					<p class="lead">Nullam id dolor id nibh ultricies vehicula ridiculus id elit. Cum sociis natoque penatibus et magnis dis parturient monteset magnis, nascetur ridiculus mus parturient montes.</p>
                                         <?php } ?>
@@ -107,19 +107,23 @@ get_header(); ?>
 </div>
 <!--home top end-->
 <!--home-page-widgets-->
-<div id="home-page-widgets">
+<div id="home-page">
 	<div class="">
             <div class="row">
-		<aside id="bavotasan_custom_text_widget-2" class="home-widget col-md-3 bavotasan_custom_text_widget text-center">
+		<aside id="gemini_custom_text-2" class="home col-md-3 gemini_custom_text text-center">
+                    <?php if (get_theme_mod('icon_1')) { ?>
+                    <i class="fa fa-<?php echo (get_theme_mod('icon_1'));?>"></i>
+                    <?php } else { ?>
                     <a href="#"><i class="info fa fa-mobile"></i></a>
-                    <div class="home-widget-title-1">
+                    <?php } ?>
+                    <div class="home-title-1">
                     <?php if ( get_theme_mod('text_header_1')) {  ?>
                     <h3 ><?php echo (get_theme_mod('text_header_1')); ?></h3>
                     <?php } else { ?>
                     <h3 ><a href="#">Mobile Ready</a></h3>
                     <?php } ?>
                     </div>
-                    <div class="textwidget1">
+                    <div class="text1">
                         <?php if ( get_theme_mod('text_content_1')) {  ?>
                         <p><?php echo (get_theme_mod('text_content_1')); ?></p>
                         <?php } else { ?>
@@ -129,16 +133,20 @@ get_header(); ?>
                    
                     <a href="#" class="btn btn-info btn-lg first">Learn more</a>
                 </aside>
-                <aside id="bavotasan_custom_text_widget-3" class="home-widget col-md-3 bavotasan_custom_text_widget text-center">
+                <aside id="gemini_custom_text-3" class="home col-md-3 gemini_custom_text text-center">
+                    <?php if (get_theme_mod('icon_2')) { ?>
+                    <a href="#"><i <?php echo (get_theme_mod('icon_2'));?> ></i></a>
+                    <?php } else { ?>
                     <a href="#"><i class="info fa fa-tint"></i></a>
-                    <div class="home-widget-title-2">
+                    <?php } ?>
+                    <div class="home-title-2">
                     <?php if ( get_theme_mod('text_header_2')) {  ?>
                     <h3 ><?php echo (get_theme_mod('text_header_2')); ?></h3>
                     <?php } else { ?>
                     <h3 ><a href="#">Color Options</a></h3>
                     <?php } ?>
                     </div>
-                    <div class="textwidget2">
+                    <div class="text2">
                         <?php if ( get_theme_mod('text_content_2')) {  ?>
                         <p><?php echo (get_theme_mod('text_content_2')); ?></p>
                         <?php } else { ?>
@@ -147,16 +155,20 @@ get_header(); ?>
                     </div>
                     <a href="#" class="btn btn-info btn-lg">Learn more</a>
                 </aside>
-                <aside id="bavotasan_custom_text_widget-5" class="home-widget col-md-3 bavotasan_custom_text_widget text-center">
+                <aside id="gemini_custom_text-5" class="home col-md-3 gemini_custom_text text-center">
+                    <?php if (get_theme_mod('icon_3')) { ?>
+                    <a href="#"><i <?php echo (get_theme_mod('icon_3'));?> ></i></a>
+                    <?php } else { ?>
                     <a href="#"><i class="info fa fa-share-square-o"></i></a>
-                    <div class="home-widget-title-3">
+                    <?php } ?>
+                    <div class="home-title-3">
                     <?php if ( get_theme_mod('text_header_3')) {  ?>
                     <h3 ><?php echo (get_theme_mod('text_header_3')); ?></h3>
                     <?php } else { ?>
                     <h3 ><a href="#">Social Menu</a></h3>
                     <?php } ?>
                     </div>
-                    <div class="textwidget3">
+                    <div class="text3">
                         <?php if ( get_theme_mod('text_content_3')) {  ?>
                         <p><?php echo (get_theme_mod('text_content_3')); ?></p>
                         <?php } else { ?>
@@ -165,16 +177,20 @@ get_header(); ?>
                     </div>
                     <a href="#" class="btn btn-info btn-lg">Learn more</a>
                 </aside>
-                <aside id="bavotasan_custom_text_widget-4" class="home-widget col-md-3 bavotasan_custom_text_widget text-center">
+                <aside id="gemini_custom_text-4" class="home col-md-3 gemini_custom_text text-center">
+                    <?php if (get_theme_mod('icon_4')) { ?>
+                    <a href="#"><i <?php echo (get_theme_mod('icon_4'));?> ></i></a>
+                    <?php } else { ?>
                     <a href="#"><i class="info fa fa-tachometer"></i></a>
-                    <div class="home-widget-title-4">
+                    <?php } ?>
+                    <div class="home-title-4">
                     <?php if ( get_theme_mod('text_header_4')) {  ?>
                     <h3><?php echo (get_theme_mod('text_header_4')); ?></h3>
                     <?php } else { ?>
                     <h3 ><a href="#">Optimized for SEO</a></h3>
                     <?php } ?>
                     </div>
-                    <div class="textwidget4">
+                    <div class="text4">
                         <?php if ( get_theme_mod('text_content_4')) {  ?>
                         <p><?php echo (get_theme_mod('text_content_4')); ?></p>
                         <?php } else { ?>

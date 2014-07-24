@@ -13,9 +13,12 @@ get_header(); ?>
 	<div class="content-padder">
 
 		<?php if ( have_posts() ) : ?>
-
+<div class="container">
+                               
 			<header class="page-header">
+                           
 				<h1 class="page-title">
+                                    
 					<?php
 						if ( is_category() ) :
 							single_cat_title();
@@ -74,6 +77,7 @@ get_header(); ?>
 				?>
 			</header><!-- .page-header -->
 
+                                <div class="col-md-8">
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
@@ -94,8 +98,10 @@ get_header(); ?>
 			<?php get_template_part( 'no-results', 'archive' ); ?>
 
 		<?php endif; ?>
-
-	</div><!-- .content-padder -->
-
+                        </div>
+<div class="col-md-4">
 <?php get_sidebar(); ?>
+    </div>
+</div>
+                        </div>
 <?php get_footer(); ?>
