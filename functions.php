@@ -179,3 +179,20 @@ require get_template_directory() . '/includes/jetpack.php';
  * Load custom WordPress nav walker.
  */
 require get_template_directory() . '/includes/bootstrap-wp-navwalker.php';
+function gemini_content_width() {
+	if ( is_page_template( '/full-width-template.php' ) || is_attachment() ) {
+		global $content_width;
+		$content_width = 1200;
+	}
+}
+add_action('template_redirect','gemini_content_width');
+
+function new_excerpt_more( $more ) {
+	return ' <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">Read More</a>';
+}
+add_filter( 'excerpt_more', 'new_excerpt_more' );
+
+function custom_excerpt_length( $length ) {
+	return 20;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );

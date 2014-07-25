@@ -6,7 +6,6 @@
  */
 ?>
 
-	</div><!-- close .main-content-inner -->
 
 	<div class="sidebar ">
 

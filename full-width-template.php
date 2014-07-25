@@ -17,7 +17,7 @@ get_header(); ?>
 
       <div class="container">  
           
-		<div class=" col-sm-12">	
+		<div class="col-sm-12">	
 	<?php while ( have_posts() ) : the_post(); ?>
 
 		<?php get_template_part( 'content', 'page' ); ?>

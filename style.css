@@ -7,7 +7,7 @@ Description: Hi, I am the ultra minimal starter theme Gemini, ready for your nex
 Version: 1.1.2
 License: GNU General Public License
 License URI: see license.txt
-Tags: coffee, nightshift
+Tags: black
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -118,7 +118,9 @@ img[class*="wp-image-"] {
     background-color: #222 !important;
     color:#fff;
 }
-
+.grid .col-md-4{
+    margin-top:30px;
+}
 .carousel-inner{
     height:600px;
     width:100%;
@@ -148,11 +150,8 @@ img[class*="wp-image-"] {
 .blogpage article .page-header h1 a:hover{
     text-decoration: none;
 }
-article .page-header h1{
-    background-color: #f5f5f5;
-    border:1px solid #e3e3e3;
-   padding:19px;
-   border-radius:4px;
+.page-header h1 a{
+    color:#000;
 }
 .page-title{
     
@@ -180,7 +179,11 @@ font-size: 28px;
 margin: 10px;
 }
 article{
-    margin-bottom:120px;
+    margin-bottom:50px;
+    border-bottom:5px solid #ddd;
+}
+.entry-meta{
+    margin-bottom:10px;
 }
 .container{
     margin:0 auto;
@@ -273,7 +276,7 @@ color: #282828;
 padding: 60px 120px;
 background: #F7F7F7;
 }
-.bavotasan_custom_text i {
+.gemini_custom_text i {
 
 border-radius: 2em;
 font-size: 40px;
@@ -303,13 +306,7 @@ border-color: #faebcc;
 footer .entry-meta{
     float:right;
 }
-.page-header h1{
-    background-color: #f5f5f5;
-border: 1px solid #e3e3e3;
-padding: 19px;
 
-border-radius: 4px;
-}
 
 .pullquote {
 color: #444;
@@ -339,11 +336,11 @@ margin-bottom: 20px;
 border: 1px solid transparent;
 border-radius: 4px;
 }
-.bavotasan_custom_text i.info {
+.gemini_custom_text i.info {
 color: #5cbde0;
 border-color: #5cbde0;
 }
-.bavotasan_custom_text h3 a{
+.gemini_custom_text h3 a{
     text-decoration: none;
     color: #282828;
 font-family: Raleway, sans-serif;
@@ -352,7 +349,7 @@ font-weight: normal;
 p {
 margin: 0 0 10px;
 }
-.bavotasan_custom_text .btn{
+.gemini_custom_text .btn{
     margin-top:20px;
 }
 .btn-lg {
@@ -361,13 +358,13 @@ font-size: 18px;
 line-height: 1.33;
 border-radius: 6px;
 }
-#bavotasan_custom_text-2 p{
+#gemini_custom_text-2 p{
     padding-bottom:20px;
 }
-.bavotasan_custom_text i:hover{
+.gemini_custom_text i:hover{
     text-decoration: none;
 }
-.bavotasan_custom_text h3 a:hover {
+.gemini_custom_text h3 a:hover {
 color: #39b3d7;
 }
 .btn-info:hover{
@@ -470,7 +467,9 @@ object {
 	padding-bottom: 1.5em;
 }
 
-
+.sticky{}
+.gallery-caption{}
+.bypostauthor{}
 
 /* Clearing */
 .clear {
